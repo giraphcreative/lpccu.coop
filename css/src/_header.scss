@@ -1,0 +1,280 @@
+
+
+header {
+	position: relative;
+	background: url(../img/bg-canvas.jpg) center center no-repeat;
+	background-size: cover;
+
+	.logo {
+		padding: 10px 15px;
+		text-align: center;
+		background-size: cover;
+
+		@include respond-to( $bp-m ) {
+			float: left;
+			padding: 20px 40px;
+		}
+
+		@include respond-to( $bp-l ) {
+			padding: 20px 50px;
+		}
+	}
+
+	nav {
+		@include clearfix;
+		position: relative;
+
+		button {
+			position: absolute;
+			right: 10px;
+			top: -50px;
+			width: 40px;
+			height: 40px;
+			border: 0;
+			padding: 0;
+			background: white;
+			color: black;
+			background: url(../img/icon-menu.png) center center no-repeat;
+			
+			@include respond-to( 400px ) {
+				right: 20px;
+			}
+
+			@include respond-to( $bp-m ) {
+				display: none;
+			}
+		}
+
+		ul.nav-menu {
+			display: none;
+			background: $navy url(../img/bg-swirl.png) top center no-repeat;
+			background-size: cover;
+			position: relative;
+			z-index: 1000;
+			text-align: center;
+			
+			@include respond-to( $bp-m ) {
+				display: block;
+				@include clearfix;
+			}
+
+			li {
+				@include respond-to( $bp-m ) {
+					box-shadow: none;
+					position: relative;
+					display: inline-block;
+				}
+
+				@include respond-to( $bp-l ) {
+					width: 19%;
+				}
+
+				a {
+					@include font-thin;
+					display: block;
+					padding: 15px 5px;
+					font-size: 22px;
+					line-height: 25px;
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					width: 100%;
+					transition: 400ms background-color ease-in-out;
+					background-color: transparent;
+
+					@include respond-to( $bp-m ) {
+						display: inline-block;
+						padding: 15px 20px;
+					}
+
+					@include respond-to( $bp-l ) {
+						font-size: 25px;
+						padding: 15px 0;
+					}
+				}
+
+				&:hover, &.open {
+					a {
+						background-color: rgba( lighten( $navy, 20% ), .2 );
+					}
+
+					ul.sub-menu {
+						@include respond-to( $bp-m ) {
+							display: block;
+						}
+					}
+				}
+
+				ul.sub-menu {
+					display: none;
+					margin-bottom: 3px;
+
+					@include respond-to( $bp-m ) {
+						position: absolute;
+						left: 0;
+						top: 55px;
+						width: 100%;
+						background-color: rgba( lighten( $navy, 5% ), .8 );
+						@include clearfix;
+					}
+
+					li {
+						display: block;
+						width: 100%;
+
+						a {
+							padding: 8px 20px;
+							font-size: 15px;
+							line-height: 18px;
+							display: block;
+
+							@include respond-to( $bp-m ) {
+								padding: 15px 10px;
+
+								&:hover {
+									background: rgba( $navy, 1 );
+								}
+							}
+
+							@include respond-to( 1220px ) {
+								padding: 15px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.search {
+		margin-bottom: 20px;
+		position: relative;
+
+		@include respond-to( 400px ) {
+			margin: 0 20px 20px 20px;
+		}
+
+		@include respond-to( $bp-m ) {
+			position: absolute;
+			top: 60px;
+			right: 40px;			
+			width: 320px;
+			margin: 0;
+		}
+
+		input[type=text] {
+			@include font;
+			display: block;
+			top: 5px;
+			right: 35px;
+			bottom: 5px;
+			left: 5px;
+			width: 100%;
+			border: 0;
+			padding: 3px 12px 0;
+			font-size: 15px;
+			line-height: 38px;
+			border-top: 2px solid $grey-dark;
+			border-bottom: 2px solid $grey-dark;
+			color: $grey-dark;
+			background-color: transparent;
+			transition: 400ms background-color ease-in-out;
+			text-transform: uppercase;
+			
+			@include respond-to( 400px ) {
+				border: 2px solid $grey-dark;
+			}
+
+			&:focus {
+				background-color: rgba( $grey, .3 );
+				outline: none;
+			}
+		}
+
+		input[type=submit] {
+			position: absolute;
+			top: -15px;
+			right: 5px;
+			bottom: 0;
+			width: 35px;
+			height: 43px;
+			border: 0;
+			background: url(../img/icon-search.png) center center no-repeat;
+			text-indent: -400px;
+			cursor: pointer;
+			border-radius: 0;
+		}
+	}
+
+    .tools {
+		margin: 10px 60px 10px 0;
+		@include clearfix;
+
+		@include respond-to( 400px ) {
+			margin: 10px 80px 10px 20px;
+		}
+
+		@include respond-to( $bp-m ) {
+			position: absolute;
+			top: 130px;
+			right: 40px;
+			width: 320px;
+			margin: 0;
+		}
+
+    	a {
+    		position: relative;
+			float: left;
+			text-decoration: none;
+			color: white;
+			font-size: 12px;
+			line-height: 20px;
+			padding: 15px 12px 8px 12px;
+			margin: 0;
+			transition: 400ms opacity ease-in-out;
+			text-transform: uppercase;
+			font-size: 10px;
+			@include respond-to( 400px ) { font-size: 13px; }
+
+		  	&:hover {
+			    opacity: .9; 
+			}
+
+			&.banking {
+				background-color: $teal;
+		        width: 48%;
+		        margin-right: 4%;
+
+				&:after {
+					content: '';
+					width: 35px;
+					height: 43px;
+					background: url(../img/icon-email.png) center center no-repeat;
+					position: absolute;
+					top: -15px;
+					right: -5px;
+					@include respond-to( 400px ) { right: 5px }
+				}
+		    }
+
+		  	&.contact {
+		  		background-color: $blue;
+		        width: 48%;
+
+				&:after {
+					content: '';
+					width: 35px;
+					height: 43px;
+					background: url(../img/icon-phone.png) center center no-repeat;
+					position: absolute;
+					top: -15px;
+					right: -5px;
+					@include respond-to( 400px ) { right: 5px }
+				}
+
+		    }
+		}
+	}
+}
+

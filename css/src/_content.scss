@@ -1,0 +1,63 @@
+
+
+.container {
+	min-width: 320px;
+	max-width: 1220px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0 0 50px #ccc;
+	border: 1px solid $grey;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.content {
+	h1, h2, h3, h4, h5, h6 {
+		padding: 6px 0;
+	}
+}
+
+.content-narrow {
+	padding: 40px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+	@extend .content-style;
+}
+
+.content-wide {
+	@include clearfix;
+	@extend .content-style;
+	padding: 30px 20px;
+
+	@include respond-to( 1024px ) {
+		padding: 50px 40px;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		@include font-thin;
+	}
+
+	&.odd {
+		background: $grey-light;
+	}
+
+	.post-title {
+		border-bottom: 1px solid $teal;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+.fluid-width-video-wrapper {
+	margin: 15px 0;
+}
+
+table {
+	width: 100%;
+
+	tr {
+		td {
+			vertical-align: top;
+			padding: 6px 10px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+
+.bg-fish { 
+	background-image: url(../img/bg-fish.png);
+	background-size: cover;
+	background-position: center center;
+ }
+
+.bg-teal { background-color: $teal; color: white; }
+.bg-navy { background-color: $navy; color: white; }
+.bg-lime { background-color: $lime; color: white; }
+.bg-grey-light { background-color: $grey; color: white; }
+.bg-grey-dark { background-color: darken( $grey, 30% ); color: white; }
+
+.text-teal { color: $teal; }
+.text-navy { color: $navy; }
+.text-lime { color: $lime; }
+.text-grey-light { color: $grey; }
+.text-grey-dark { color: darken( $grey, 30% ); }
+
