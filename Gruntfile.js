@@ -47,6 +47,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'css/src/main-unprefixed.css': 'css/src/main.scss',
+                    'css/editor.css': 'css/src/editor.scss',
                 }
             }
         },
