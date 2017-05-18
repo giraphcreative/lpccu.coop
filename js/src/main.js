@@ -44,6 +44,21 @@ jQuery(document).ready(function($){
 	$( 'button[data-url]' ).click(function(){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
+
+	$( 'a.external' ).click(function( e ){
+		
+		// break the normal linking behavior
+		e.preventDefault();
+
+		// get the link
+		var the_link = $( this );
+
+		// prompt the user and if they confirm the prompt, proceed to the third party site.
+		if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
+			location.href = the_link.attr( 'href' );
+		}
+
+	});
 	
 });
 
