@@ -45,7 +45,10 @@
 	.post-title {
 		border-bottom: 1px solid $teal;
 		padding-bottom: 15px;
-		margin-bottom: 15px;
+		
+		margin-bottom: 10px;
+		@include respond-to( $bp-s ) { margin-bottom: 20px; }
+		@include respond-to( $bp-l ) { margin-bottom: 30px; }
 	}
 }
 

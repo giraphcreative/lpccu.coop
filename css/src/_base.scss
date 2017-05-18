@@ -137,8 +137,13 @@ img {
 		border-bottom: 1px solid lighten( $blue, 25% );
 		padding: 0;
 		margin: 10px 0;
+		
 		@include respond-to( $bp-s ) {
 			margin: 20px 0;
+		}
+		
+		@include respond-to( $bp-l ) {
+			margin: 30px 0;
 		}
 	}
 
