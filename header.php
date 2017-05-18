@@ -38,7 +38,7 @@
 		</div>
 		
 		<div class='tools'>
-			<a href="https://www.netbranch.app.fiserv.com/lpccu/" class="banking">Home Banking</a>
+			<a href="https://www.netbranch.app.fiserv.com/lpccu/" class="banking bypass">Home Banking</a>
 			<a href="/about/contact/" class="contact">Contact Us</a>
 		</div>
 
