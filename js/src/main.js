@@ -52,16 +52,17 @@ jQuery(document).ready(function($){
 
 		// get the link
 		var the_link = $( this );
+		var the_link_href = the_link.attr( 'href' );
 
 		// prompt the user and if they confirm the prompt, proceed to the third party site.
-		if ( the_link.attr( 'href' ).match( '/lpccu.dev/i' ) || 
-			the_link.attr( 'href' ).match( '/lpccu.coop/i' ) || 
-			the_link.attr( 'href' ).match( '/lp.giraph.io/i' ) || 
-			the_link.attr( 'href' ).charAt(0) === '/' ) {
-			location.href = the_link.attr( 'href' );
+		if ( the_link_href.match( /lpccu.dev/i ) || 
+			the_link_href.match( /lpccu.coop/i ) || 
+			the_link_href.match( /lp.giraph.io/i ) || 
+			the_link_href.charAt(0) === '/' ) {
+			location.href = the_link_href;
 		} else {
 			if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
-				location.href = the_link.attr( 'href' );
+				location.href = the_link_href;
 			}
 		}
 
