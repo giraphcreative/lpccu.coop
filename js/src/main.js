@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 
-	$( 'a.external' ).click(function( e ){
+	$( 'a' ).click(function( e ){
 		
 		// break the normal linking behavior
 		e.preventDefault();
@@ -54,8 +54,15 @@ jQuery(document).ready(function($){
 		var the_link = $( this );
 
 		// prompt the user and if they confirm the prompt, proceed to the third party site.
-		if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
+		if ( the_link.attr( 'href' ).match( '/lpccu.dev/i' ) || 
+			the_link.attr( 'href' ).match( '/lpccu.coop/i' ) || 
+			the_link.attr( 'href' ).match( '/lp.giraph.io/i' ) || 
+			the_link.attr( 'href' )charAt(0) === '/' ) {
 			location.href = the_link.attr( 'href' );
+		} else {
+			if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
+				location.href = the_link.attr( 'href' );
+			}
 		}
 
 	});
