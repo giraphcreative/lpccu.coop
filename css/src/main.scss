@@ -10,9 +10,6 @@ $grey: #9C9FA0;
 $grey-light: lighten( $grey, 25% );
 $grey-dark: darken( $grey, 25% );
 
-// link color
-$link-color: $teal;
-
 
 // breakpoints
 $bp-s: 600px;
@@ -21,54 +18,6 @@ $bp-l: 1024px;
 $bp-xl: 1220px;
 
 
-// text and background colors
-@import "colors";
-
-
-// mixin library
-@import "mixins";
-
-
-// font import and mixins
-@import "fonts";
-
-
-// css reset
-@import "reset";
-
-
-// base text and element styles
-@import "base";
-@import "grid";
-
-
-// header styles
-@import "header";
-
-
-// general styles
-@import "showcase";
-@import "content";
-
-
-// sidebar styles
-@import "sidebar";
-
-
-// footer styles
-@import "footer";
-
-
-// home-specific styles
-@import "home";
-
-
-// include magnific popup styles
-@import "magnific";
-
-
-// import editor styles
-@import "../../editor-style.css";
-
-
+// import all the things
+@import "colors", "mixins", "fonts", "reset", "base", "grid", "header", "showcase", "content", "sidebar", "footer", "home", "magnific", "../../editor-style.css";
 
