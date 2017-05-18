@@ -2,48 +2,48 @@
 
 @font-face {
 	font-family: 'Woodford Bourne Thin';
-	src:url('fonts/woodford-bourne-thin.woff2') format('woff2'),
-		url('fonts/woodford-bourne-thin.woff') format('woff');
+	src:url('#{$font_path}woodford-bourne-thin.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-thin.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Woodford Bourne Thin Italic';
-	src:url('fonts/woodford-bourne-thin-italic.woff2') format('woff2'),
-		url('fonts/woodford-bourne-thin-italic.woff') format('woff');
+	src:url('#{$font_path}/woodford-bourne-thin-italic.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-thin-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Woodford Bourne';
-	src:url('fonts/woodford-bourne-regular.woff2') format('woff2'),
-		url('fonts/woodford-bourne-regular.woff') format('woff');
+	src:url('#{$font_path}/woodford-bourne-regular.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Woodford Bourne Italic';
-	src:url('fonts/woodford-bourne-italic.woff2') format('woff2'),
-		url('fonts/woodford-bourne-italic.woff') format('woff');
+	src:url('#{$font_path}/woodford-bourne-italic.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Woodford Bourne Bold';
-	src:url('fonts/woodford-bourne-bold-italic.woff2') format('woff2'),
-		url('fonts/woodford-bourne-bold-italic.woff') format('woff');
+	src:url('#{$font_path}/woodford-bourne-bold-italic.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-bold-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Woodford Bourne Bold Italic';
-	src:url('fonts/woodford-bourne-bold-italic.woff2') format('woff2'),
-		url('fonts/woodford-bourne-bold-italic.woff') format('woff');
+	src:url('#{$font_path}/woodford-bourne-bold-italic.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-bold-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
