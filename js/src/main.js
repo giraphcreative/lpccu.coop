@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
 			location.href = the_link_href;
 		} else {
 			if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
-				location.href = the_link_href;
+				window.open( the_link_href, "_blank" );
 			}
 		}
 
