@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
 		if ( the_link.attr( 'href' ).match( '/lpccu.dev/i' ) || 
 			the_link.attr( 'href' ).match( '/lpccu.coop/i' ) || 
 			the_link.attr( 'href' ).match( '/lp.giraph.io/i' ) || 
-			the_link.attr( 'href' )charAt(0) === '/' ) {
+			the_link.attr( 'href' ).charAt(0) === '/' ) {
 			location.href = the_link.attr( 'href' );
 		} else {
 			if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
