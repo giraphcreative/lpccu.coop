@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                 }
             },
             css: {
-                files: ['css/src/*.scss'],
+                files: ['css/src/*.scss','editor-style.css'],
                 tasks: ['sass','autoprefixer'],
                 options: {
                     spawn: false
