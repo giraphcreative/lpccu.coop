@@ -1,23 +1,5 @@
 
 
-// set colors
-$teal: #43A8C6;
-$blue: #2074B1;
-$navy: #0E426A;
-$green: #A2CE4D;
-$lime: #8DC641;
-$grey: #9C9FA0;
-$grey-light: lighten( $grey, 25% );
-$grey-dark: darken( $grey, 25% );
-
-
-// breakpoints
-$bp-s: 600px;
-$bp-m: 768px;
-$bp-l: 1024px;
-$bp-xl: 1220px;
-
-
 // import all the things
-@import "colors", "mixins", "fonts", "reset", "base", "grid", "header", "showcase", "content", "sidebar", "footer", "home", "magnific", "editor";
+@import "mixins", "colors", "fonts", "reset", "base", "icons", "grid", "header", "showcase", "content", "sidebar", "footer", "icons", "magnific";
 

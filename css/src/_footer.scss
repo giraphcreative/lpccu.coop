@@ -1,5 +1,12 @@
 
 
+.footer-image {
+	img {
+		display: block;
+	}
+}
+
+
 footer {
 	background: $navy url(../img/bg-swirl.png) top center no-repeat;
 	background-size: cover;

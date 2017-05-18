@@ -1,19 +1,36 @@
 
-.bg-fish { 
-	background-image: url(../img/bg-fish.png);
-	background-size: cover;
-	background-position: center center;
- }
 
-.bg-teal { background-color: $teal; color: white; }
-.bg-navy { background-color: $navy; color: white; }
-.bg-lime { background-color: $lime; color: white; }
-.bg-grey-light { background-color: $grey; color: white; }
-.bg-grey-dark { background-color: darken( $grey, 30% ); color: white; }
+// set colors
+$teal: #43A8C6;
+$blue: #2074B1;
+$navy: #0E426A;
+$green: #A2CE4D;
+$lime: #8DC641;
+$grey: #9C9FA0;
+$grey-light: lighten( $grey, 25% );
+$grey-dark: darken( $grey, 25% );
 
-.text-teal { color: $teal; }
-.text-navy { color: $navy; }
-.text-lime { color: $lime; }
-.text-grey-light { color: $grey; }
-.text-grey-dark { color: darken( $grey, 30% ); }
+
+// breakpoints
+$bp-s: 600px;
+$bp-m: 768px;
+$bp-l: 1024px;
+$bp-xl: 1220px;
+
+
+// add the color names to an array.
+$colors: 'navy', 'blue', 'teal', 'green', 'lime', 'grey', 'grey-light', 'grey-dark';
+
+
+// loop through the array and output background and text color classes.
+$i: 1;
+@each $color in $colors {
+    .bg-#{$color} {
+    	background-color: nth( $colors, $i );
+    }
+    .text-#{$color} { 
+    	color: nth( $colors, $i ); 
+    }
+	$i: $i + 1;
+}
 

@@ -21,8 +21,13 @@ include( "library/metabox.php" );
 // include quote metaboxes/functions
 // include( "library/title.php" );
 include( "library/showcase.php" );
+include( "library/icons.php" );
 include( "library/boxes.php" );
+include( "library/footer.php" );
 
+
+// add editor stylesheet
+add_editor_style( 'editor-style.css' );
 
 
 // pagination

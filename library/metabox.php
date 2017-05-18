@@ -15,10 +15,6 @@ function page_metaboxes( $meta_boxes ) {
         'id' => 'showcase_metabox',
         'title' => 'Showcase',
         'object_types' => array( 'page' ), // post type
-        'show_on' => array(
-            'key' => 'template',
-            'value' => array( '', 'page-front' )
-        ),
         'context' => 'normal',
         'priority' => 'high',
     ) );
@@ -48,12 +44,12 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
 
+
     // thumb showcase metabox
     $icon_showcase_metabox = new_cmb2_box( array(
         'id' => 'icon_showcase_metabox',
         'title' => 'Icons',
         'object_types' => array( 'page' ),
-        'show_on'      => array( 'key' => 'page-template', 'value' => 'page-front.php' ),
         'context' => 'normal',
         'priority' => 'high',
     ) );
@@ -70,11 +66,11 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
-        'name' => 'Image',
-        'desc' => 'Upload a 100x100 pixel icon image. Ideally a transparent PNG.',
+        'name' => 'Icon Image',
+        'desc' => 'Upload a 90x90 pixel icon image, ideally a transparent PNG with the icon in white.',
         'id'   => 'image',
         'type' => 'file',
-        'preview_size' => array( 100, 100 )
+        'preview_size' => array( 90, 90 )
     ) );
 
     $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
@@ -90,6 +86,20 @@ function page_metaboxes( $meta_boxes ) {
         'desc' => 'Specify a URL to which this ad should link.',
         'id'   => 'link',
         'type' => 'text',
+    ) );
+
+    $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
+        'name' => 'Color',
+        'desc' => 'Choose a color for the background of the icon and the text-color.',
+        'id'   => 'color',
+        'type' => 'select',
+        'options' => array(
+            'navy' => "Navy",
+            'blue' => "Blue",
+            'teal' => "Teal",
+            'green' => "Green"
+        ),
+        'default' => 'navy'
     ) );
 
     
@@ -130,7 +140,48 @@ function page_metaboxes( $meta_boxes ) {
         'options' => array( 'textarea_rows' => 7 )
     ) );
 
-    
+
+
+    // thumb showcase metabox
+    $footer_image_showcase_metabox = new_cmb2_box( array(
+        'id' => 'footer_image_metabox',
+        'title' => 'Footer Image',
+        'object_types' => array( 'page' ),
+        'context' => 'normal',
+        'priority' => 'high',
+    ) );
+
+    $footer_image_showcase_metabox->add_field( array(
+        'name' => 'Image',
+        'desc' => 'Upload a full width image/photo for the footer.',
+        'id'   => CMB_PREFIX . 'footer-image',
+        'type' => 'file',
+        'preview_size' => array( 100, 100 )
+    ) );
+
+    $footer_image_showcase_metabox->add_field( array(
+        'name' => 'Link',
+        'desc' => 'Specify a URL to which this ad should link.',
+        'id'   => CMB_PREFIX . 'footer-image-link',
+        'type' => 'text',
+    ) );
+
+
+
+    // thumb showcase metabox
+    $layout_metabox = new_cmb2_box( array(
+        'id' => 'layout_metabox',
+        'title' => 'Layout Options',
+        'object_types' => array( 'page' ),
+        'context' => 'side',
+        'priority' => 'high',
+    ) );
+
+    $layout_metabox->add_field( array(
+        'name' => 'Hide title?',
+        'id'   => CMB_PREFIX . 'layout-title-hide',
+        'type' => 'checkbox',
+    ) );
 
 }
 add_filter( 'cmb2_init', 'page_metaboxes' );

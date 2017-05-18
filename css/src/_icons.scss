@@ -1,0 +1,70 @@
+
+
+.icons {
+	padding: 10px 0;
+
+	a {
+		* {			
+			opacity: 1;
+			transition: 300ms all ease-in-out;			
+		}
+
+		&:hover * {
+			text-decoration: none;
+			opacity: .9;
+		}
+	
+		.icon {
+			padding: 10px 20px;
+
+			@include respond-to( 450px ) {
+				padding: 40px 20px;
+				width: 50%;
+				float: left;
+
+				&:nth-child(3), &:nth-child(5), &:nth-child(7) {
+					clear: left;
+				}
+			}
+
+			@include respond-to( 800px ) {
+				width: 25%;
+
+				&:nth-child(3), &:nth-child(5), &:nth-child(7) {
+					clear: none;
+				}			
+			}
+		
+			.icon-image {
+				background-size: contain;
+				background-position: center center;
+				background-repeat: no-repeat;
+				text-align: center;
+				margin: 0 auto;
+				max-width: 140px;
+				padding: 30px 10px 50px 0;
+
+				img {
+					max-width: 75px;
+				}
+
+				&.navy { background-image: url( '../img/bubble-navy.png' ); }
+				&.blue { background-image: url( '../img/bubble-blue.png' ); }
+				&.teal { background-image: url( '../img/bubble-teal.png' ); }
+				&.green { background-image: url( '../img/bubble-green.png' ); }
+			}
+		
+			h5 {
+				text-transform: uppercase;
+				line-height: 1.6em;
+				text-align: center;
+				color: $teal;
+
+				&.navy { color: $navy; }
+				&.blue { color: $blue; }
+				&.green { color: $green; }
+			}
+		}
+	}
+}
+
