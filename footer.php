@@ -14,7 +14,7 @@
 	
 	<footer class="footer">
 		<div class="column first">
-			<h5>Front Royal Federal Credit Union</h5>
+			<h5>Lincoln Park Community Credit Union</h5>
 			<p>1400 Emmons<br>
 			Lincoln Park, MI  48146<br>
 			Phone: 313.389.2300<br>
@@ -54,8 +54,8 @@
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
 		</div>
 		<div class="column links">
-			<a href="" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-shared.png" class="alignright"></a>
-			<a href="" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
+			<a href="#" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-shared.png" class="alignright"></a>
+			<a href="#" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-notices', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 	</div>
