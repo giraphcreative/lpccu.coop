@@ -14,7 +14,7 @@
 	
 	<footer class="footer">
 		<div class="column first">
-			<h5>Lincoln Park Community Credit Union</h5>
+			<h5>Lincoln Park Community CU</h5>
 			<p>1400 Emmons<br>
 			Lincoln Park, MI  48146<br>
 			Phone: 313.389.2300<br>
