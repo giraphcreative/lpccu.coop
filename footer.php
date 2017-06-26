@@ -54,8 +54,8 @@
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
 		</div>
 		<div class="column links">
-			<a href="#" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-shared.png" class="alignright"></a>
-			<a href="#" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
+			<a href="https://co-opcreditunions.org/locator/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-shared.png" class="alignright"></a>
+			<a href="https://www.facebook.com/LincolnParkCommunityCU/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-notices', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 	</div>
