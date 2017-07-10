@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 
-	$( 'a' ).click(function( e ){
+	$( 'a[href]' ).click(function( e ){
 		
 		// break the normal linking behavior
 		e.preventDefault();
