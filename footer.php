@@ -48,7 +48,7 @@
 
 	<div class="colophon">
 		<div class="column">
-			<a href="http://lp.giraph.io/ncua-insurance-information/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright">Your savings are federally insured to at least $250,000, and backed by the full faith and credit of the United States Government. 
+			<a href="http://lp.giraph.io/ncua-insurance-information/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright"></a>Your savings are federally insured to at least $250,000, and backed by the full faith and credit of the United States Government. 
 		</div>
 		<div class="column">
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 

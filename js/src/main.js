@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 
-	$( 'a[href]' ).click(function( e ){
+	$( '.content a' ).click(function( e ){
 		
 		// break the normal linking behavior
 		e.preventDefault();
@@ -59,6 +59,7 @@ jQuery(document).ready(function($){
 			the_link_href.match( /lpccu.dev/i ) || 
 			the_link_href.match( /lpccu.coop/i ) || 
 			the_link_href.match( /lp.giraph.io/i ) || 
+			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
 		} else {
