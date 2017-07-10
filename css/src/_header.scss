@@ -252,7 +252,7 @@ header {
 					height: 43px;
 					background: url(../img/icon-email.png) center center no-repeat;
 					position: absolute;
-					top: -15px;
+					top: -10px;
 					right: -5px;
 					@include respond-to( 400px ) { right: 5px }
 				}
@@ -268,7 +268,7 @@ header {
 					height: 43px;
 					background: url(../img/icon-phone.png) center center no-repeat;
 					position: absolute;
-					top: -15px;
+					top: -10px;
 					right: -5px;
 					@include respond-to( 400px ) { right: 5px }
 				}
