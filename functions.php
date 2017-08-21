@@ -22,6 +22,7 @@ include( "library/metabox.php" );
 // include( "library/title.php" );
 include( "library/showcase.php" );
 include( "library/icons.php" );
+include( "library/calculator.php" );
 include( "library/boxes.php" );
 include( "library/footer.php" );
 
