@@ -183,6 +183,48 @@ function page_metaboxes( $meta_boxes ) {
         'type' => 'checkbox',
     ) );
 
+
+
+    // emergency metabox
+    $emergency_metabox = new_cmb2_box( array(
+        'id' => 'emergency_metabox',
+        'title' => 'Emergency Bar',
+        'desc' => "An emergency bar on the top to indicate local news or bring people into a specific area of the site when there's something you want them to read.",
+        'object_types' => array( 'page' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+    ));
+
+    $emergency_metabox->add_field( array(
+        'name' => 'Emergency Text',
+        'id'   => CMB_PREFIX . 'emergency-text',
+        'type' => 'text',
+    ) );
+
+    $emergency_metabox->add_field( array(
+        'name' => 'Link',
+        'desc' => 'Where should the emergency bar link to.',
+        'id'   => CMB_PREFIX . 'emergency-link',
+        'type' => 'text',
+    ) );
+
+    $emergency_metabox->add_field( array(
+        'name' => 'Color',
+        'desc' => 'What color should the emergency bar be?',
+        'id'   => CMB_PREFIX . 'emergency-color',
+        'type' => 'select',
+        'options' => array(
+            'red' => 'Red',
+            'orange' => 'Orange',
+            'yellow' => 'Yellow',
+            'lime' => 'Lime',
+            'navy' => 'Navy',
+            'blue' => 'Blue',
+            'teal' => 'Teal'
+        )
+    ) );
+
+
 }
 add_filter( 'cmb2_init', 'page_metaboxes' );
 
