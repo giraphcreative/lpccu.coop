@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 
-	$( '.content a:not(.previous):not(.next)' ).click(function( e ){
+	$( '.content a:not(.previous):not(.next):not(.lightbox-iframe)' ).click(function( e ){
 		
 		// break the normal linking behavior
 		e.preventDefault();
@@ -55,7 +55,7 @@ jQuery(document).ready(function($){
 		var the_link_href = the_link.attr( 'href' );
 
 		// prompt the user and if they confirm the prompt, proceed to the third party site.
-		if ( the_link.hasClass( 'bypass' ) || 
+		if ( the_link.hasClass( 'bypass' ) ||
 			the_link_href.match( /lpccu.dev/i ) || 
 			the_link_href.match( /lpccu.coop/i ) || 
 			the_link_href.match( /lp.giraph.io/i ) || 
@@ -69,6 +69,8 @@ jQuery(document).ready(function($){
 		}
 
 	});
+
+	$( '.lightbox-iframe' ).magnificPopup({ 'type': 'iframe' });
 	
 });
 
