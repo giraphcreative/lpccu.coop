@@ -453,10 +453,124 @@
 
 jQuery(document).ready(function($){
 
+    // interest comparison calculator
 	$( ".calculator-compare" ).accrue({
 		mode: "compare"
 	});
 
-	$( ".calculator-loan" ).accrue();
+	
+    // normal loan calculator
+    $( ".calculator-loan" ).accrue();
+
+
+    // a function to calculate savings and output it in the provided span tags.
+    if ( $( ".calculator.scratch.one" ).length ) {
+        
+        var calc = function() {
+            var the_calc = $( ".calculator.scratch.one" );
+
+            var amount = the_calc.find('.amount').val(),
+                term=the_calc.find('.term').val(),
+                rate=the_calc.find('.rate').val();
+            if ( amount != '' && amount != 0 && term != '' && term != 0 && rate != '' && rate != 0 ) {
+                var result = $.loanInfo({
+                    'amount': amount,
+                    'term': term,
+                    'rate': rate
+                });
+
+                // populate savings in span tags
+                //$('.results .savings-total').html( total_savings );
+                if ( result.payment_amount > 0 ) {
+                    the_calc.find('.payment').val( "$" + result.payment_amount_formatted );
+                } else {
+                    the_calc.find('.payment').val( '' );
+                }
+            }
+        };
+
+
+        // initially calculate savings
+        calc();
+
+        // calculate savings on keyup for inputs in calculator div
+        $('.calculator.scratch.one input').keyup( calc );
+
+    }
+
+
+    // a function to calculate savings and output it in the provided span tags.
+    if ( $( ".calculator.scratch.two" ).length ) {
+        
+        var calc = function() {
+            var the_calc = $( ".calculator.scratch.two" );
+
+            var amount = the_calc.find('.amount').val(),
+                term=the_calc.find('.term').val(),
+                rate=the_calc.find('.rate').val();
+            if ( amount != '' && amount != 0 && term != '' && term != 0 && rate != '' && rate != 0 ) {
+                var result = $.loanInfo({
+                    'amount': amount,
+                    'term': term,
+                    'rate': rate
+                });
+
+                // populate savings in span tags
+                //$('.results .savings-total').html( total_savings );
+                if ( result.payment_amount > 0 ) {
+                    the_calc.find('.payment').val( "$" + result.payment_amount_formatted );
+                } else {
+                    the_calc.find('.payment').val( '' );
+                }
+            }
+        };
+
+
+        // initially calculate savings
+        calc();
+
+        // calculate savings on keyup for inputs in calculator div
+        $('.calculator.scratch.two input').keyup( calc );
+
+    }
+
+
+    // a function to calculate savings and output it in the provided span tags.
+    if ( $( ".calculator.scratch.three" ).length ) {
+        
+        var calc = function() {
+            var the_calc = $( ".calculator.scratch.three" );
+
+            var amount = the_calc.find('.amount').val(),
+                term=the_calc.find('.term').val(),
+                rate=the_calc.find('.rate').val();
+            if ( amount != '' && amount != 0 && term != '' && term != 0 && rate != '' && rate != 0 ) {
+                var result = $.loanInfo({
+                    'amount': amount,
+                    'term': term,
+                    'rate': rate
+                });
+
+                // populate savings in span tags
+                //$('.results .savings-total').html( total_savings );
+                if ( result.payment_amount > 0 ) {
+                    the_calc.find('.payment').val( "$" + result.payment_amount_formatted );
+                } else {
+                    the_calc.find('.payment').val( '' );
+                }
+            }
+        };
+
+
+        // initially calculate savings
+        calc();
+
+        // calculate savings on keyup for inputs in calculator div
+        $('.calculator.scratch.three input').keyup( calc );
+
+    }
+
 
 });
+
+

@@ -22,9 +22,9 @@ var jaaulde=window.jaaulde||{};jaaulde.utils=jaaulde.utils||{};jaaulde.utils.coo
 jQuery(document).ready(function($){
 
 	var bar = $( '.emergency-bar-container' );
-	if ( bar ) {
+	if ( bar.length ) {
 		var identifier = bar.attr( 'class' ).replace( ' red', '' ).replace( ' orange', '' ).replace( ' yellow', '' ).replace( ' green', '' ).replace( ' navy', '' ).replace( ' blue', '' ).replace( ' teal', '' ).replace( 'emergency-bar-container', '' );
-		console.log( identifier );
+		// console.log( identifier );
 		if ( $.cookies.get( 'emergency-'+identifier+'shown' ) == null ) {
 			$( '.emergency-bar-container' ).addClass( 'show' );
 			$( '.emergency-bar-container .fa-close' ).click(function(){
