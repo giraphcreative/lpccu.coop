@@ -34,9 +34,10 @@ module.exports = function(grunt) {
                         'js/src/*.js',
                     ]
                 }
-            },
+            }/* ,
             sourceMap: true,
             sourceMapName: 'js/main.js.map'
+            */
         },
 
 

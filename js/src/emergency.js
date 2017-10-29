@@ -18,6 +18,7 @@ var jaaulde=window.jaaulde||{};jaaulde.utils=jaaulde.utils||{};jaaulde.utils.coo
 {$this.html(value);}}break;}}});},cookieBind:function(options){return this.each(function(){var $this=$(this);$this.cookieFill().change(function(){$this.cookify(options);});});}};$.each(extensions,function(i){$.fn[i]=this;});})(window.jQuery);}})();
 
 
+/*
 // onload responsive footer and menu stuff
 jQuery(document).ready(function($){
 
@@ -35,6 +36,6 @@ jQuery(document).ready(function($){
 	}
 
 });
-
+*/
 
 
