@@ -19,6 +19,7 @@ var jaaulde=window.jaaulde||{};jaaulde.utils=jaaulde.utils||{};jaaulde.utils.coo
 
 
 
+/*
 // onload responsive footer and menu stuff
 jQuery(document).ready(function($){
 
@@ -36,5 +37,5 @@ jQuery(document).ready(function($){
 	}
 
 });
-
+*/
 
