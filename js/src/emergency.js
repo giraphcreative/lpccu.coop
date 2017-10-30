@@ -19,12 +19,11 @@ var jaaulde=window.jaaulde||{};jaaulde.utils=jaaulde.utils||{};jaaulde.utils.coo
 
 
 
-/*
 // onload responsive footer and menu stuff
 jQuery(document).ready(function($){
 
-	if ( $( '.emergency-bar-container' ).length ) {
-		var bar = $( '.emergency-bar-container' );
+	var bar = $( '.emergency-bar-container' );
+	if ( bar.length ) {
 		var identifier = bar.attr( 'class' ).replace( ' red', '' ).replace( ' orange', '' ).replace( ' yellow', '' ).replace( ' green', '' ).replace( ' navy', '' ).replace( ' blue', '' ).replace( ' teal', '' ).replace( 'emergency-bar-container', '' );
 		// console.log( identifier );
 		if ( $.cookies.get( 'emergency-'+identifier+'shown' ) == null ) {
@@ -37,5 +36,5 @@ jQuery(document).ready(function($){
 	}
 
 });
-*/
+
 
