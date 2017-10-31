@@ -24,7 +24,7 @@ function calculator_func( $atts ) {
 	<div class="form">
 		<div class="quarter">Amount:<br>
 			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term:<br>
+		<div class="quarter">Term (months):<br>
 			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
 		<div class="quarter">Rate:<br>
 			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
@@ -35,7 +35,7 @@ function calculator_func( $atts ) {
 	<div class="form">
 		<div class="quarter">Amount:<br>
 			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term:<br>
+		<div class="quarter">Term (months):<br>
 			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
 		<div class="quarter">Rate:<br>
 			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
@@ -46,7 +46,7 @@ function calculator_func( $atts ) {
 	<div class="form">
 		<div class="quarter">Amount:<br>
 			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term:<br>
+		<div class="quarter">Term (months):<br>
 			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
 		<div class="quarter">Rate:<br>
 			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
