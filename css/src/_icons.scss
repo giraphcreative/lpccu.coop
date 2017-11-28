@@ -30,12 +30,8 @@
 			@include respond-to( 800px ) {
 				width: 25%;
 
-				&:nth-child(3), &:nth-child(5), &:nth-child(7), &:nth-child(9) {
+				&:nth-child(3), &:nth-child(7) {
 					clear: none;
-				}
-
-				&:nth-child(5), &:nth-child(9) {
-					clear: left;
 				}
 			}
 		
