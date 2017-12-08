@@ -47,7 +47,7 @@
 	</div>
 
 	<nav role="navigation">
-		<button class="menu-toggle"><i class="fa fa-bars"></i></button>
+		<button class="menu-toggle"><i class="fa fa-bars">Show/hide Menu</i></button>
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
 	</nav>
 	
