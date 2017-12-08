@@ -48,14 +48,14 @@
 
 	<div class="colophon">
 		<div class="column">
-			<a href="/ncua-insurance-information/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright"></a>Your savings are federally insured to at least $250,000, and backed by the full faith and credit of the United States Government. 
+			<a href="/ncua-insurance-information/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright" alt="Insured by the NCUA"></a>Your savings are federally insured to at least $250,000, and backed by the full faith and credit of the United States Government. 
 		</div>
 		<div class="column">
-			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright" alt="Equal Housing Lender">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
 		</div>
 		<div class="column links">
-			<a href="https://co-opcreditunions.org/locator/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-shared.png" class="alignright"></a>
-			<a href="https://www.facebook.com/LincolnParkCommunityCU/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
+			<a href="https://co-opcreditunions.org/locator/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-shared.png" class="alignright" alt="COOP Credit Union Locator"></a>
+			<a href="https://www.facebook.com/LincolnParkCommunityCU/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright" alt="Visit us on Facebook."></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-notices', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 	</div>
