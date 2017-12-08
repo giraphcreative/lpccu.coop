@@ -18,11 +18,12 @@ function the_showcase() {
 				$title = ( isset( $slide["title"] ) ? $slide["title"] : '' );
 				$subtitle = ( isset( $slide["subtitle"] ) ? $slide["subtitle"] : '' );
 				$link = ( isset( $slide["link"] ) ? $slide["link"] : '' );
+				$alt = ( isset( $slide['alt-text'] ) ? $slide["alt-text"] : "Link to " . $link );
 
 				// check if it's an image or video
 				if ( p_is_image( $slide["image"] ) ) {
 					// it's an image, so resize it and generate an img tag.
-					$image = '<img src="' . $slide["image"] . '">';
+					$image = '<img src="' . $slide["image"] . '" alt="' . $alt . '">';
 				} else {
 					// it's a video, so oEmbed that stuffs, yo
 					$image = apply_filter( 'the_content', $slide["image"] );

@@ -31,16 +31,23 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $showcase_metabox->add_group_field( $showcase_metabox_group, array(
-        'name' => 'Link',
-        'id'   => 'link',
-        'type' => 'text',
-    ) );
-
-    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
         'name' => 'Image/Video',
         'id'   => 'image',
         'type' => 'file',
         'preview_size' => array( 200, 100 )
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Alt text',
+        'desc' => 'Specify alt text for this slide.',
+        'id'   => 'alt-text',
+        'type' => 'text',
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Link',
+        'id'   => 'link',
+        'type' => 'text',
     ) );
 
 
@@ -71,6 +78,14 @@ function page_metaboxes( $meta_boxes ) {
         'id'   => 'image',
         'type' => 'file',
         'preview_size' => array( 90, 90 )
+    ) );
+
+    $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
+        'name' => 'Image Alt Text',
+        'desc' => 'Set alt text for the icon.',
+        'id'   => 'alt-text',
+        'type' => 'text',
+        'sanitization_cb' => false
     ) );
 
     $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
@@ -157,6 +172,13 @@ function page_metaboxes( $meta_boxes ) {
         'id'   => CMB_PREFIX . 'footer-image',
         'type' => 'file',
         'preview_size' => array( 100, 100 )
+    ) );
+
+    $footer_image_showcase_metabox->add_field( array(
+        'name' => 'Alt text',
+        'desc' => 'Specify alt text for this slide.',
+        'id'   => CMB_PREFIX . 'footer-alt-text',
+        'type' => 'text',
     ) );
 
     $footer_image_showcase_metabox->add_field( array(
