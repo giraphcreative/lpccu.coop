@@ -58,6 +58,9 @@
 			<a href="https://www.facebook.com/LincolnParkCommunityCU/" class="alignright"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright" alt="Visit us on Facebook."></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-notices', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
+		<div class="ada-disclaimer">
+			Lincoln Park Community Credit Union is committed to providing a website that is accessible to the widest possible audience in accordance with ADA standards and guidelines. We are actively working to increase the accessibility and usability of our website to all people. If you are using a screen reader or other auxiliary aid and are having problems using this website, please contact us at 313.389.2300 for assistance. All products and services available on this website are available at our office as well. 
+		</div>
 	</div>
 
 </div><!-- #container -->

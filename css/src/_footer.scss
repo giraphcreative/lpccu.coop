@@ -166,5 +166,18 @@ footer {
 	img {
 		max-width: 30%;
 	}
+
+	.ada-disclaimer {
+		@include clearfix;
+		display: block;
+		font-size: .8em;
+		opacity: .8;
+		text-align: center;
+		border-top: 1px solid #eee;
+
+		@include respond-to( 768px ) {
+			padding: 20px;
+		}
+	}
 }
 
