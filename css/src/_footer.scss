@@ -128,6 +128,12 @@ footer {
 		font-size: .7em;
 		clear: both;
 		padding: 20px;
+		color: $grey-dark;
+		transition: color 400ms ease-in-out;
+
+		&:hover {
+			color: black;
+		}
 
 		@include respond-to( $bp-s ) {
 			clear: none;
@@ -174,6 +180,12 @@ footer {
 		opacity: .8;
 		text-align: center;
 		border-top: 1px solid #eee;
+		color: $grey-dark;
+		transition: color 400ms ease-in-out;
+
+		&:hover {
+			color: black;
+		}
 
 		@include respond-to( 768px ) {
 			padding: 20px;
