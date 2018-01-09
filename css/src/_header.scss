@@ -239,6 +239,7 @@ header {
 			transition: 400ms opacity ease-in-out;
 			text-transform: uppercase;
 			font-size: 10px;
+			background-color: $blue;
 			@include respond-to( 400px ) { font-size: 13px; }
 
 		  	&:hover {
@@ -246,7 +247,6 @@ header {
 			}
 
 			&.banking {
-				background-color: $teal;
 		        width: 48%;
 		        margin-right: 4%;
 
@@ -256,14 +256,13 @@ header {
 					height: 43px;
 					background: url(../img/icon-email.png) center center no-repeat;
 					position: absolute;
-					top: -10px;
+					top: -8px;
 					right: -5px;
 					@include respond-to( 400px ) { right: 5px }
 				}
 		    }
 
 		  	&.contact {
-		  		background-color: $blue;
 		        width: 48%;
 
 				&:after {
