@@ -23,7 +23,7 @@ footer {
 
 	h5 {
 		font-size: 1em;
-		color: $teal;
+		color: lighten( $teal, 20% );
 
 		@include respond-to( $bp-m ) {
 			font-size: 1.2em;
