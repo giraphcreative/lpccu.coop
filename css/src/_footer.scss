@@ -125,10 +125,10 @@ footer {
 
 	.column {
 		@include font;
-		font-size: .7em;
+		font-size: .85em;
 		clear: both;
 		padding: 20px;
-		color: $grey-dark;
+		color: lighten( $grey-dark, 5% );
 		transition: color 400ms ease-in-out;
 
 		&:hover {
@@ -176,11 +176,10 @@ footer {
 	.ada-disclaimer {
 		@include clearfix;
 		display: block;
-		font-size: .8em;
-		opacity: .8;
+		font-size: .85em;
 		text-align: center;
 		border-top: 1px solid #eee;
-		color: $grey-dark;
+		color: lighten( $grey-dark, 5% );
 		transition: color 400ms ease-in-out;
 
 		&:hover {
