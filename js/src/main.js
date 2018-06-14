@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 
-	$( '.content a:not(.previous):not(.next):not(.lightbox-iframe)' ).click(function( e ){
+	$( '.content a:not(.previous):not(.next):not(.lightbox-iframe), a.off-site' ).click(function( e ){
 		
 		// break the normal linking behavior
 		e.preventDefault();
