@@ -69,6 +69,9 @@ function add_lpccu_headers( $headers ) {
         $headers['strict-transport-security'] = 'max-age=31536000; includeSubDomains';
     }
 
+    // deny x-frame from external pages
+    $headers['X-Frame-Options'] = 'DENY';
+
     // return the headers array
     return $headers;
 }
