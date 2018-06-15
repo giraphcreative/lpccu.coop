@@ -66,7 +66,7 @@ function add_lpccu_headers( $headers ) {
 
     // if on secure, send strict transport security header
     if (!empty($_SERVER['HTTPS'])) {
-        $headers['strict-transport-security'] = 'max-age=31536000; includeSubDomains';
+        $headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains';
     }
 
     // deny x-frame from external pages
