@@ -58,4 +58,13 @@ function pagination( $prev = '&laquo;', $next = '&raquo;' ) {
 }
 
 
+// add some security-related headers to the http headers array
+function add_lpccu_headers( $headers ) {
+    $headers['Content-Security-Policy'] = "frame-ancestors 'none'";
+    return $headers;
+}
+
+add_filter('wp_headers', 'add_lpccu_headers');
+
+
 ?>
