@@ -60,11 +60,20 @@ function pagination( $prev = '&laquo;', $next = '&raquo;' ) {
 
 // add some security-related headers to the http headers array
 function add_lpccu_headers( $headers ) {
+
+    // send content security policy
     $headers['Content-Security-Policy'] = "frame-ancestors 'none'";
+
+    // if on secure, send strict transport security header
+    if (!empty($_SERVER['HTTPS'])) {
+        $headers['strict-transport-security'] = 'max-age=31536000; includeSubDomains';
+    }
+
+    // return the headers array
     return $headers;
 }
-
 add_filter('wp_headers', 'add_lpccu_headers');
+
 
 
 ?>
