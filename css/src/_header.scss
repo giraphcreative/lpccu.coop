@@ -33,7 +33,7 @@ header {
 			border: 0;
 			padding: 0;
 			background: white;
-			color: black;
+			color: rgba( black, 0 );
 			background: url(../img/icon-menu.png) center center no-repeat;
 			
 			@include respond-to( 400px ) {

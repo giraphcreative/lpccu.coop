@@ -1,12 +1,13 @@
 {
-    "name" : "stmatthews",
-    "version" : "0.0.1",
-    "devDependencies" : {
-        "grunt" :                       "latest",
-        "grunt-contrib-sass":           "*",
-        "grunt-contrib-uglify":         "*",
-        "grunt-contrib-watch":          "*",
-        "grunt-autoprefixer":           "*",
-        "matchdep":                     "*"
+    "devDependencies": {
+        "current-device": "^0.8.0",
+        "grunt": "^1.0.4",
+        "grunt-autoprefixer": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-uglify": "^4.0.1",
+        "grunt-contrib-watch": "^1.1.0",
+        "js-cookie": "^2.2.0",
+        "matchdep": "^2.0.0",
+        "version": "0.0.1"
     }
 }

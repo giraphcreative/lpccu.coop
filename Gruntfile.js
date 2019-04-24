@@ -29,6 +29,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'js/main.js': [
+                        'node_modules/current-device/umd/current-device.js',
+                        'node_modules/js-cookie/src/js.cookie.js',
                         'js/lib/fitvids/jquery.fitvids.js',
                         'js/lib/magnific/dist/jquery.magnific-popup.js',
                         'js/src/*.js',
