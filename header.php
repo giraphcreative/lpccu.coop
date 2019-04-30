@@ -22,11 +22,11 @@
 <body <?php body_class(); ?>>
 
 <div class="app-bar ios">
-	Get our iOS app! <a href="https://itunes.apple.com/us/app/lincoln-park-community-cu/id1148730451?mt=8" class="install">Install &raquo;</a> <a class='close'>X</a>
+	Get our mobile banking app! <a href="https://itunes.apple.com/us/app/lincoln-park-community-cu/id1148730451?mt=8" class="install">Install &raquo;</a> <a class='close'>X</a>
 </div>
 
 <div class="app-bar android">
-	Get our Android app! <a href="https://play.google.com/store/apps/details?id=com.lincolnparkccu.mobile" class="install">Install &raquo;</a> <a class='close'>X</a>
+	Get our mobile banking app! <a href="https://play.google.com/store/apps/details?id=com.lincolnparkccu.mobile" class="install">Install &raquo;</a> <a class='close'>X</a>
 </div>
 
 <?php the_emergency_bar(); ?>
