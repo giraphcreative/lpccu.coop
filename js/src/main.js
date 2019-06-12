@@ -59,6 +59,7 @@ jQuery(document).ready(function($){
 			the_link_href.match( /lpccu.dev/i ) || 
 			the_link_href.match( /lpccu.coop/i ) || 
 			the_link_href.match( /lp.giraph.io/i ) || 
+			the_link_href.match( /www.netbranch.app.fiserv.com/i ) || 
 			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
