@@ -15,14 +15,14 @@
 	<footer class="footer">
 		<div class="column first">
 			<h5>Lincoln Park Community CU</h5>
-			<p>1400 Emmons<br>
-			Lincoln Park, MI  48146<br>
-			Phone: 313.389.2300<br>
-			Routing Number: 272482375<br>
-			Lost/Stolen VISA Credit:<br>
-			800.237.6211 / 866.604.0381<br>
-			Lost/Stolen Debit MasterCard:<br>
-			800.554.8969</p>
+			<p>1400 Emmons, Lincoln Park, MI 48146<br>
+				Phone 313.389.2300 - Routing # 272482375<br>
+				Lost/Stolen VISA Credit:<br>
+				800.237.6211 / 866.604.0381<br>
+				Lost/Stolen/Dispute Debit MasterCard:<br>
+				833.305.9994 / 833.305.9996<br>
+				Debit MasterCard activation/PIN reset<br>
+				800.992.3808</p>
 		</div>
 		<div class="column">
 			<h5>Loans</h5>
