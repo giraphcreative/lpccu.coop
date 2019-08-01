@@ -1,6 +1,6 @@
 {
     "devDependencies": {
-        "current-device": "^0.8.0",
+        "current-device": "^0.8.2",
         "grunt": "^1.0.4",
         "grunt-autoprefixer": "*",
         "grunt-contrib-sass": "*",
