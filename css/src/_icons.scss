@@ -3,10 +3,20 @@
 .icons {
 	padding: 10px 0;
 
+	@include respond-to( 550px ) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	a {
-		* {			
-			opacity: 1;
-			transition: 300ms all ease-in-out;			
+		@include respond-to( 550px ) {
+			padding: 40px 20px;
+			flex: 1;
+			flex-basis: 50%;
+		}
+
+		@include respond-to( 900px ) {
+			flex-basis: 25%;
 		}
 
 		&:hover * {
@@ -17,24 +27,6 @@
 		.icon {
 			padding: 10px 20px;
 
-			@include respond-to( 450px ) {
-				padding: 40px 20px;
-				width: 50%;
-				float: left;
-
-				&:nth-child(3), &:nth-child(5), &:nth-child(7), &:nth-child(9) {
-					clear: left;
-				}
-			}
-
-			@include respond-to( 800px ) {
-				width: 25%;
-
-				&:nth-child(3), &:nth-child(7) {
-					clear: none;
-				}
-			}
-		
 			.icon-image {
 				background-size: contain;
 				background-position: center center;
