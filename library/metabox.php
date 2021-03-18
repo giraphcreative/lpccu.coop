@@ -2,7 +2,7 @@
 
 
 // init cmb2
-require_once( 'cmb2/init.php' );
+// require_once( 'cmb2/init.php' );
 
 
 
