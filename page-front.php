@@ -62,7 +62,7 @@ get_header();
 			wp_reset_postdata();
 			?>
 		</div>
-		<div class="blog-read-more"><a href="/resources/blog" class="btn">Read More Blog Posts</a></div>
+		<div class="blog-read-more"><a href="/resources/blog" class="btn blue">Read More Blog Posts</a></div>
 	</div>
 
 	<?php the_boxes(); ?>

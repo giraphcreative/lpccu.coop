@@ -1,0 +1,39 @@
+
+
+button, input[type=submit], .btn {
+	@include font;
+	display: inline-block;
+	padding: 6px 20px;
+	max-width: 100%;
+	background: $lime;
+	border: 0;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 10px;
+	text-decoration: none;
+	margin: 8px 0;
+
+	&:hover {
+		text-decoration: none;
+		opacity: .8;
+	}
+
+	&.blue { background-color: $blue; }
+	&.teal { background-color: $teal; }
+	&.navy { background-color: $navy; }
+	&.lime { background-color: $lime; }
+	&.green { background-color: $green; }
+	&.orange { background-color: $orange; }
+	&.grey { background-color: $grey; }
+	&.grey-light { background-color: $grey-light; }
+	&.grey-dark { background-color: $grey-dark; }
+	&.white { background-color: white; color: $grey; }
+}
+
+
+input[type=submit] {
+	background-color: $blue;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+

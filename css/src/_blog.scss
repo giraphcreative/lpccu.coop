@@ -40,24 +40,11 @@
 	}
 
 	.blog-read-more {
-		padding: 20px;
+		padding: 0 20px 20px;
 		text-align: center;
 
 		@include respond-to( 768px ) {
 			padding: 20px 0 40px 0;
-		}
-
-		.btn {
-			background: $blue;
-			color: white;
-			padding: 12px 20px;
-			font-size: 1.2em;
-			text-transform: uppercase;
-
-			&:hover {
-				text-decoration: none;
-				opacity: .8;
-			}
 		}
 	}
 }

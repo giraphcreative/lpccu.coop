@@ -25,6 +25,7 @@ include( "library/showcase.php" );
 include( "library/icons.php" );
 include( "library/calculator.php" );
 include( "library/boxes.php" );
+include( "library/button.php" );
 include( "library/footer.php" );
 
 
