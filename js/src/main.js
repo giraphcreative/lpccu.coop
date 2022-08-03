@@ -72,6 +72,15 @@ jQuery(document).ready(function($){
 	});
 
 	$( '.lightbox-iframe' ).magnificPopup({ 'type': 'iframe' });
+
+	$( '.lightbox-banking-open' ).click(function(){
+        $.magnificPopup.open({
+            items: {
+                src: '.lightbox-banking'
+            },
+            type: 'inline'
+        });
+	});
 	
 });
 

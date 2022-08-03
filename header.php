@@ -16,7 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=11" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=12" rel="stylesheet" type="text/css">
 
 </head>
 <body <?php body_class(); ?>>
@@ -30,6 +30,34 @@
 </div>
 
 <?php the_emergency_bar(); ?>
+
+<div class="lightbox-banking hide">
+	<h4>Important Info: <span class="new">New Online Banking Platform</span></h4>
+	<p>Online banking will have a new and refreshed look on August 18, 2022. This will be a significant change to the current interface that you've experienced before. It increases your security and provides an improved interface with our Mobiliti apps. <strong>When the new online banking launches, you'll be prompted to update your Login ID and Security Code (password).</strong></p>
+	<div class="columns">
+		<div class="column">
+			<h5>Login ID</h5>
+			<p>Your Login ID will be the same as your previous Login ID which is usually your 5-digit account number with a leading 0. For example:</p>
+			<p><span class="old"><strong>Old:</strong> 12345</span><br>
+			<span class="new"><strong>New:</strong> 012345</span></p>
+		</div>
+		<div class="column">
+			<h5>Security Code (Password)</h5>
+			<p>Your new security code will be the word security in all lowercase + the last 4 of the primary member’s Social Security Number.</p>
+			<p>If the last four of your SSN is 1234, then your default passcode is <span class="new">security1234</span>.</p>
+		</div>
+	</div>
+	<h5>What's different?</h5>
+	<ul>
+		<li>Scheduled Transfers will need to be set up again.</li>
+		<li>Shared Accounts are no longer available.</li>
+		<li>You will have access to any account you are joint on.</li>
+		<li>Representatives can assist you with relationship accounts for other member-to-member transfers.</li>
+		<li>You'll need to re-enroll in Credit Sense if you use it to check your credit score/receive tailored offers.</li>
+	</ul>
+	<p><a href="https://www.netbranch.app.fiserv.com/lpccu/" class="btn teal">Continue to Home Banking</a></p>
+	<p class="quiet">Questions about the change? <a href="/about/contact/">Contact us today</a> for additional information.</p>
+</div>
 
 <div class="container">
 
@@ -48,7 +76,7 @@
 		</div>
 		
 		<div class='tools'>
-			<a href="https://www.netbranch.app.fiserv.com/lpccu/" class="banking bypass">Home Banking</a>
+			<a href="#" class="lightbox-banking-open banking">Home Banking</a>
 			<a href="/about/contact/" class="contact">Contact Us</a>
 		</div>
 

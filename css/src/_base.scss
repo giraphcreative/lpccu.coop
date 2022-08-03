@@ -121,6 +121,18 @@ img {
 		padding: 10px 0 5px;
 	}
 
+	b, strong {
+		@include font-bold;
+	}
+
+	i, em {
+		@include font-italic;
+	}
+
+	i strong, em strong, b i, b em {
+		@include font-bold-italic;
+	}
+
 	blockquote {
 		padding: 10px 25px;
 		@include font;
