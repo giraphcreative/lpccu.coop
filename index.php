@@ -3,6 +3,11 @@
 Home/catch-all template
 */
 
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 get_header(); ?>
 
 
@@ -10,7 +15,7 @@ get_header(); ?>
 
 		<?php
 		if ( is_search() ) {
-			?><h1 class="post-title">Search Results for <span>'<?php print htmlspecialchars( striptags( $_REQUEST["s"] ) ); ?>'</span></h1><?php
+			?><h1 class="post-title">Search Results for <span>'<?php print htmlspecialchars( strip_tags( $_REQUEST["s"] ) ); ?>'</span></h1><?php
 		} else {
 			?><h1 class="post-title">LPCCU Blog</h1><?php
 		}
@@ -24,9 +29,8 @@ get_header(); ?>
 			while ( have_posts() ) : the_post(); 
 				?>
 				<div class="entry">
-				    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 				    <h4><a href="<?php the_permalink(); ?>"><?php print get_the_title(); ?></a></h4>
-				    <?php the_excerpt(); ?>
+				    <?php the_excerpt( 50 ); ?>
 				</div>
 				<?php
 			endwhile;

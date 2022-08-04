@@ -32,18 +32,18 @@
 <?php the_emergency_bar(); ?>
 
 <div class="lightbox-banking hide">
-	<h4>Important Info: <span class="new">New Online Banking Platform</span></h4>
-	<p>Online banking will have a new and refreshed look on August 18, 2022. This will be a significant change to the current interface that you've experienced before. It increases your security and provides an improved interface with our Mobiliti apps. <strong>When the new online banking launches, you'll be prompted to update your Login ID and Security Code (password).</strong></p>
+	<h4><span class="new">New Online Banking Platform</span></h4>
+	<p>The new online banking system increases your security and provides an improved interface with our Mobiliti apps. <strong>Upon your first login, you'll be prompted to update your Login ID and Security Code (password).</strong> Here's how to gain access to your account:</p>
 	<div class="columns">
 		<div class="column">
 			<h5>Login ID</h5>
-			<p>Your Login ID will be the same as your previous Login ID which is usually your 5-digit account number with a leading 0. For example:</p>
+			<p>Your Login ID will be the same as your previous Login ID which is usually your <strong>5-digit account number</strong> with a <strong>leading 0</strong>. For example:</p>
 			<p><span class="old"><strong>Old:</strong> 12345</span><br>
 			<span class="new"><strong>New:</strong> 012345</span></p>
 		</div>
 		<div class="column">
 			<h5>Security Code (Password)</h5>
-			<p>Your new security code will be the word security in all lowercase + the last 4 of the primary member’s Social Security Number.</p>
+			<p>Your new security code will be the word <strong>'security'</strong> in all lowercase + the <strong>last 4</strong> of the primary member’s Social Security Number.</p>
 			<p>If the last four of your SSN is 1234, then your default passcode is <span class="new">security1234</span>.</p>
 		</div>
 	</div>
@@ -53,7 +53,7 @@
 		<li>Shared Accounts are no longer available.</li>
 		<li>You will have access to any account you are joint on.</li>
 		<li>Representatives can assist you with relationship accounts for other member-to-member transfers.</li>
-		<li>You'll need to re-enroll in Credit Sense if you use it to check your credit score/receive tailored offers.</li>
+		<li>You'll need to re-enroll in <a href="/services/mobile/">Credit Sense</a> if you use it to check your credit score/receive tailored offers.</li>
 	</ul>
 	<p><a href="https://www.netbranch.app.fiserv.com/lpccu/" class="btn teal">Continue to Home Banking</a></p>
 	<p class="quiet">Questions about the change? <a href="/about/contact/">Contact us today</a> for additional information.</p>
@@ -76,7 +76,11 @@
 		</div>
 		
 		<div class='tools'>
+			<?php if ( time() > 1660798800 ) { ?>
+			<a href="#" class="lightbox-banking-open banking">Home Banking</a>
+			<?php } else { ?>
 			<a href="https://www.netbranch.app.fiserv.com/lpccu/" class="banking">Home Banking</a>
+			<?php } ?>
 			<a href="/about/contact/" class="contact">Contact Us</a>
 		</div>
 
