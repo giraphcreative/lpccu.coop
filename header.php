@@ -16,7 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=13" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=14" rel="stylesheet" type="text/css">
 
 </head>
 <body <?php body_class(); ?>>
@@ -35,7 +35,7 @@
 	<div class="question">
 		<h4><span class="new">Have you logged into the new Online Banking yet?</span></h4>
 		<p><strong>Have you logged into Online Banking since the Online Banking update on 8/18?</strong> If you haven't yet, we'll provide you some information that will help you get in for the first time.</p>
-		<p><a href="https://www.netbranch.app.fiserv.com/lpccu/" class="btn teal">Yes, I Have</a> <a href="#" class="btn navy instructions-show">No, I Haven't</a></p>
+		<p><a href="https://lpccu-dn.financial-net.com/web/" class="btn teal">Yes, I Have</a> <a href="#" class="btn navy instructions-show">No, I Haven't</a></p>
 	</div>
 	<div class="instructions hidden">
 		<h4><span class="new">New Online Banking Platform</span></h4>
@@ -53,7 +53,7 @@
 				<p>If the last four of your SSN is 1234, then your default passcode is <span class="new">security1234</span>.</p>
 			</div>
 		</div>
-		<p><a href="https://www.netbranch.app.fiserv.com/lpccu/" class="btn teal">Continue to Home Banking</a></p>
+		<p><a href="https://lpccu-dn.financial-net.com/web/" class="btn teal">Continue to Home Banking</a></p>
 		<p class="quiet">Questions about the change? <a href="/about/contact/">Contact us today</a> for additional information.</p>
 	</div>
 </div>
