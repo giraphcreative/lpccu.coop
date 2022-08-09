@@ -433,6 +433,10 @@ img.mfp-img {
     }
   }
 
+  .hidden {
+    display: none;
+  }
+
   @include respond-to( 1024px ) {
     max-width: 1150px;
   }

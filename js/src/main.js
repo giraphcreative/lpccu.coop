@@ -73,6 +73,9 @@ jQuery(document).ready(function($){
 
 	$( '.lightbox-iframe' ).magnificPopup({ 'type': 'iframe' });
 
+
+
+
 	$( '.lightbox-banking-open' ).click(function(){
         $.magnificPopup.open({
             items: {
@@ -82,6 +85,12 @@ jQuery(document).ready(function($){
         });
 	});
 	
+	$( '.instructions-show' ).on( 'click', function(){
+		$( '.lightbox-banking .question' ).hide();
+		$( '.lightbox-banking .instructions' ).show();
+	});
+
+
 });
 
 
