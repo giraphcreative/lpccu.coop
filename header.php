@@ -75,11 +75,11 @@
 		</div>
 		
 		<div class='tools'>
-			<?php if ( time() > 1660798800 || isset( $_REQUEST['test'] ) ) { ?>
+			<!--<?php if ( time() > 1660798800 || isset( $_REQUEST['test'] ) ) { ?>
 			<a href="#" class="lightbox-banking-open banking">Home Banking</a>
-			<?php } else { ?>
+			<?php } else { ?>-->
 			<a href="https://www.netbranch.app.fiserv.com/lpccu/" class="banking">Home Banking</a>
-			<?php } ?>
+			<!--<?php } ?>-->
 			<a href="/about/contact/" class="contact">Contact Us</a>
 		</div>
 
