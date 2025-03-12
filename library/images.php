@@ -123,4 +123,6 @@ function p_is_image( $img_path ) {
 }
 
 
-?>
+add_filter('wp_img_tag_add_auto_sizes', '__return_false');
+
+
